@@ -1,0 +1,298 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10B8D23815EEBE6A00F658D0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B8D23715EEBE6A00F658D0 /* UIKit.framework */; };
+		10B8D23A15EEBE6A00F658D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B8D23915EEBE6A00F658D0 /* Foundation.framework */; };
+		10B8D23C15EEBE6A00F658D0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B8D23B15EEBE6A00F658D0 /* CoreGraphics.framework */; };
+		10B8D24215EEBE6A00F658D0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 10B8D24015EEBE6A00F658D0 /* InfoPlist.strings */; };
+		10B8D24415EEBE6A00F658D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B8D24315EEBE6A00F658D0 /* main.m */; };
+		10B8D24815EEBE6A00F658D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B8D24715EEBE6A00F658D0 /* AppDelegate.m */; };
+		10B8D24B15EEBE6A00F658D0 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10B8D24915EEBE6A00F658D0 /* MainStoryboard.storyboard */; };
+		10B8D24E15EEBE6A00F658D0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B8D24D15EEBE6A00F658D0 /* ViewController.m */; };
+		10B8D28215EEDFB200F658D0 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B8D28115EEDFB200F658D0 /* Constants.m */; };
+		10B8D28515EF1DA700F658D0 /* TodoDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B8D28415EF1DA700F658D0 /* TodoDetailsViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		10B8D23315EEBE6A00F658D0 /* myobileservice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myobileservice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10B8D23715EEBE6A00F658D0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		10B8D23915EEBE6A00F658D0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		10B8D23B15EEBE6A00F658D0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		10B8D23F15EEBE6A00F658D0 /* myobileservice-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "myobileservice-Info.plist"; sourceTree = "<group>"; };
+		10B8D24115EEBE6A00F658D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		10B8D24315EEBE6A00F658D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		10B8D24515EEBE6A00F658D0 /* myobileservice-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "myobileservice-Prefix.pch"; sourceTree = "<group>"; };
+		10B8D24615EEBE6A00F658D0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		10B8D24715EEBE6A00F658D0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		10B8D24A15EEBE6A00F658D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		10B8D24C15EEBE6A00F658D0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		10B8D24D15EEBE6A00F658D0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		10B8D28015EEDFB200F658D0 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		10B8D28115EEDFB200F658D0 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		10B8D28315EF1DA700F658D0 /* TodoDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoDetailsViewController.h; sourceTree = "<group>"; };
+		10B8D28415EF1DA700F658D0 /* TodoDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoDetailsViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10B8D23015EEBE6A00F658D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10B8D23815EEBE6A00F658D0 /* UIKit.framework in Frameworks */,
+				10B8D23A15EEBE6A00F658D0 /* Foundation.framework in Frameworks */,
+				10B8D23C15EEBE6A00F658D0 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10B8D22815EEBE6A00F658D0 = {
+			isa = PBXGroup;
+			children = (
+				10B8D23D15EEBE6A00F658D0 /* myobileservice */,
+				10B8D23615EEBE6A00F658D0 /* Frameworks */,
+				10B8D23415EEBE6A00F658D0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		10B8D23415EEBE6A00F658D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				10B8D23315EEBE6A00F658D0 /* myobileservice.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		10B8D23615EEBE6A00F658D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10B8D23715EEBE6A00F658D0 /* UIKit.framework */,
+				10B8D23915EEBE6A00F658D0 /* Foundation.framework */,
+				10B8D23B15EEBE6A00F658D0 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		10B8D23D15EEBE6A00F658D0 /* myobileservice */ = {
+			isa = PBXGroup;
+			children = (
+				10B8D24615EEBE6A00F658D0 /* AppDelegate.h */,
+				10B8D24715EEBE6A00F658D0 /* AppDelegate.m */,
+				10B8D24915EEBE6A00F658D0 /* MainStoryboard.storyboard */,
+				10B8D24C15EEBE6A00F658D0 /* ViewController.h */,
+				10B8D24D15EEBE6A00F658D0 /* ViewController.m */,
+				10B8D28315EF1DA700F658D0 /* TodoDetailsViewController.h */,
+				10B8D28415EF1DA700F658D0 /* TodoDetailsViewController.m */,
+				10B8D28015EEDFB200F658D0 /* Constants.h */,
+				10B8D28115EEDFB200F658D0 /* Constants.m */,
+				10B8D23E15EEBE6A00F658D0 /* Supporting Files */,
+			);
+			path = myobileservice;
+			sourceTree = "<group>";
+		};
+		10B8D23E15EEBE6A00F658D0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				10B8D23F15EEBE6A00F658D0 /* myobileservice-Info.plist */,
+				10B8D24015EEBE6A00F658D0 /* InfoPlist.strings */,
+				10B8D24315EEBE6A00F658D0 /* main.m */,
+				10B8D24515EEBE6A00F658D0 /* myobileservice-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		10B8D23215EEBE6A00F658D0 /* myobileservice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10B8D25115EEBE6A00F658D0 /* Build configuration list for PBXNativeTarget "myobileservice" */;
+			buildPhases = (
+				10B8D22F15EEBE6A00F658D0 /* Sources */,
+				10B8D23015EEBE6A00F658D0 /* Frameworks */,
+				10B8D23115EEBE6A00F658D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = myobileservice;
+			productName = myobileservice;
+			productReference = 10B8D23315EEBE6A00F658D0 /* myobileservice.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		10B8D22A15EEBE6A00F658D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = MSDPE;
+			};
+			buildConfigurationList = 10B8D22D15EEBE6A00F658D0 /* Build configuration list for PBXProject "myobileservice" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 10B8D22815EEBE6A00F658D0;
+			productRefGroup = 10B8D23415EEBE6A00F658D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				10B8D23215EEBE6A00F658D0 /* myobileservice */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10B8D23115EEBE6A00F658D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10B8D24215EEBE6A00F658D0 /* InfoPlist.strings in Resources */,
+				10B8D24B15EEBE6A00F658D0 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10B8D22F15EEBE6A00F658D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10B8D24415EEBE6A00F658D0 /* main.m in Sources */,
+				10B8D24815EEBE6A00F658D0 /* AppDelegate.m in Sources */,
+				10B8D24E15EEBE6A00F658D0 /* ViewController.m in Sources */,
+				10B8D28215EEDFB200F658D0 /* Constants.m in Sources */,
+				10B8D28515EF1DA700F658D0 /* TodoDetailsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		10B8D24015EEBE6A00F658D0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10B8D24115EEBE6A00F658D0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		10B8D24915EEBE6A00F658D0 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10B8D24A15EEBE6A00F658D0 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		10B8D24F15EEBE6A00F658D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		10B8D25015EEBE6A00F658D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		10B8D25215EEBE6A00F658D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "myobileservice/myobileservice-Prefix.pch";
+				INFOPLIST_FILE = "myobileservice/myobileservice-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		10B8D25315EEBE6A00F658D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "myobileservice/myobileservice-Prefix.pch";
+				INFOPLIST_FILE = "myobileservice/myobileservice-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10B8D22D15EEBE6A00F658D0 /* Build configuration list for PBXProject "myobileservice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10B8D24F15EEBE6A00F658D0 /* Debug */,
+				10B8D25015EEBE6A00F658D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10B8D25115EEBE6A00F658D0 /* Build configuration list for PBXNativeTarget "myobileservice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10B8D25215EEBE6A00F658D0 /* Debug */,
+				10B8D25315EEBE6A00F658D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 10B8D22A15EEBE6A00F658D0 /* Project object */;
+}
