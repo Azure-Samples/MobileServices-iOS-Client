@@ -291,6 +291,7 @@
 				10B8D25315EEBE6A00F658D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

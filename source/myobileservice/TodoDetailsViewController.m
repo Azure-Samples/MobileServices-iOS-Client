@@ -17,6 +17,7 @@
 #import "TodoDetailsViewController.h"
 #import "AppDelegate.h"
 #import "Constants.h"
+#import "NSData+Base64.h"
 
 @interface TodoDetailsViewController ()
 
@@ -30,6 +31,8 @@
 @synthesize addingNewTodo;
 @synthesize todoText;
 @synthesize delegate;
+@synthesize imageViewNewTodo;
+@synthesize imageViewExistingTodo;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -50,8 +53,13 @@
         AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
         for (NSDictionary *item in appDelegate.todos) {
             if ([todoText isEqualToString:[item objectForKey:@"text"]]){
-                NSLog(@"Item: %@", item);
                 todoId = (NSNumber*) [item objectForKey:@"id"];
+                NSString *stringData = (NSString *)[item objectForKey:@"coltest"];
+                if (stringData != (id)[NSNull null]) {
+                    NSData *data = [NSData dataFromBase64String:stringData];
+                    UIImage *image = [UIImage imageWithData:data];
+                    imageViewExistingTodo.image = image;
+                }
                 break;
             }
         }
@@ -67,6 +75,8 @@
     [self setLblTodoText:nil];
     [self setViewCreateTodo:nil];
     [self setViewDetailsTodo:nil];
+    [self setImageViewNewTodo:nil];
+    [self setImageViewExistingTodo:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -86,10 +96,21 @@
     [theRequest addValue:@"application/json" forHTTPHeaderField:@"ACCEPT"];
     [theRequest addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     [theRequest addValue:kMobileServiceAppId forHTTPHeaderField:@"X-ZUMO-APPLICATION"];
+    
+    NSData *data = nil;
+    NSString *imageData = nil;
+    if (imageViewNewTodo.image != nil) {
+        UIImage *image = imageViewNewTodo.image;
+        data = UIImagePNGRepresentation(image);
+        imageData = [data base64EncodedString];
+    }
+
+    
     //build an info object and convert to json
     NSDictionary* jsonDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
                                     @"false", @"complete",
                                     txtTodoText.text, @"text",
+                                    imageData, @"coltest",
                                     nil];
     //convert JSON object to data
     NSError *error;
@@ -180,5 +201,23 @@
     } else {
         // We should inform the user that the connection failed.
     }
+}
+- (IBAction)tapSelectImage:(id)sender {
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    picker.delegate = self;
+    [self presentModalViewController:picker animated:YES];
+}
+
+#pragma UIImagePickerControllerDelegate Methods
+
+/**
+ Called when the user has selected an image from the Gallery
+ */
+- (void)imagePickerController:(UIImagePickerController *)picker
+        didFinishPickingImage:(UIImage *)image
+                  editingInfo:(NSDictionary *)editingInfo {
+    imageViewNewTodo.image = image;
+    [picker dismissModalViewControllerAnimated:YES];
 }
 @end

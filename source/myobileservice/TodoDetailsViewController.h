@@ -22,7 +22,7 @@
 - (void)todoDetailsViewController:(TodoDetailsViewController *)controller didFinishWithTodo:(NSString *)todoId andTodoText:(NSString *)todoText;
 @end
 
-@interface TodoDetailsViewController : UIViewController<NSURLConnectionDelegate> {
+@interface TodoDetailsViewController : UIViewController<NSURLConnectionDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
     @private
     NSNumber* todoId;
     NSMutableData* receivedData;
@@ -33,9 +33,11 @@
 @property (weak, nonatomic) IBOutlet UITextField *txtTodoText;
 @property (weak, nonatomic) IBOutlet UILabel *lblTodoText;
 @property (nonatomic, weak) id <TodoDetailsViewControllerDelegate> delegate;
+@property (weak, nonatomic) IBOutlet UIImageView *imageViewNewTodo;
+@property (weak, nonatomic) IBOutlet UIImageView *imageViewExistingTodo;
 @property (nonatomic, weak) NSString *todoText;
 @property BOOL addingNewTodo;
 - (IBAction)tapSaveTodo:(id)sender;
 - (IBAction)tapMarkTodoComplete:(id)sender;
-
+- (IBAction)tapSelectImage:(id)sender;
 @end
